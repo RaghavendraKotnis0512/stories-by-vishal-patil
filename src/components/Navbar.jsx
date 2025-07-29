@@ -16,7 +16,7 @@ const Navbar = () => {
       <nav className="w-full bg-white px-6 py-4 fixed top-0 left-0 z-50">
         <div className="flex items-center justify-between">
           {/* Hamburger Icon on the left */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 cursor-pointer">
             <button
               onClick={() => setOpen(true)}
               className="text-black focus:outline-none"
@@ -50,9 +50,9 @@ const Navbar = () => {
   <Link to="/about" onClick={() => setOpen(false)} className="flex items-center gap-3 font-[Nunito] hover:text-gray-500 transition-all duration-300 cursor-pointer">
     <Info size={28} /> About
   </Link>
-  <Link to="/destination" onClick={() => setOpen(false)} className="flex items-center gap-3 font-[Nunito] hover:text-gray-500 transition-all duration-300 cursor-pointer">
+  {/* <Link to="/destination" onClick={() => setOpen(false)} className="flex items-center gap-3 font-[Nunito] hover:text-gray-500 transition-all duration-300 cursor-pointer">
     <LocateIcon size={28} /> Destinations Covered
-  </Link>
+  </Link> */}
   <Link to="/portfolio" onClick={() => setOpen(false)} className="flex items-center gap-3 font-[Nunito] hover:text-gray-500 transition-all duration-300 cursor-pointer">
     <Image size={28} /> Portfolio
   </Link>
