@@ -16,10 +16,10 @@ const Navbar = () => {
       <nav className="w-full bg-white px-6 py-4 fixed top-0 left-0 z-50">
         <div className="flex items-center justify-between">
           {/* Hamburger Icon on the left */}
-          <div className="flex items-center gap-4 cursor-pointer">
+          <div className="flex items-center gap-4">
             <button
               onClick={() => setOpen(true)}
-              className="text-black focus:outline-none"
+              className="text-black focus:outline-none cursor-pointer"
             >
               <Menu size={24} />
             </button>
