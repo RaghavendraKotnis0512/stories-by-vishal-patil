@@ -23,7 +23,7 @@ const Navbar = () => {
             >
               <Menu size={24} />
             </button>
-            <img src="vplogo.png" className="ml-8 w-40 h-20"></img>
+            <img src="vplogo.webp" className="ml-8 w-40 h-20"></img>
           </div>
         </div>
       </nav>

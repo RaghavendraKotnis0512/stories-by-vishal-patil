@@ -7,8 +7,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const images = ["/swiper1.jpg", "/swiper2.jpg", "/swiper3.jpg","/swiper4.jpg","/swiper5.jpg","/swiper6.jpg","/swiper7.jpg","/portfolio12.JPG"];
-const featuredImages = ["/portfolio1.png","/portfolio2.png","/portfolio3.png","/featured1.jpg","/featured2.jpg","/featured3.jpg"]
+const images = ["/swiper1.webp", "/swiper2.webp", "/swiper3.webp","/swiper4.webp","/swiper5.webp","/swiper6.webp","/swiper7.webp","/portfolio12.webp"];
+const featuredImages = ["/portfolio1.webp","/portfolio2.webp","/portfolio3.webp","/featured1.webp","/featured2.webp","/featured3.webp"]
 const testimonials = [
   {
     name: "Aarav & Meera",
@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       {/* Hero Swiper */}
-      <div className="w-full mt-20 border-8 border-white rounded-2xl overflow-hidden shadow-xl">
+      <div className="w-full mt-30 border-8 border-white rounded-2xl overflow-hidden shadow-xl">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation

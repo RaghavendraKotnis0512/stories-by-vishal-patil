@@ -6,7 +6,7 @@ import "swiper/css/effect-fade";
 import { useNavigate } from "react-router-dom";
 
 // Images must be inside the `public/` folder
-const images = ["/landing1.png", "/landing2.png", "/landing3.jpg"];
+const images = ["/landing1.webp", "/landing2.webp", "/landing3.webp"];
 
 const LandingPage = () => {
   const navigate = useNavigate();

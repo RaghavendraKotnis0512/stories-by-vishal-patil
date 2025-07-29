@@ -25,7 +25,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <img
-            src="/vishal.png" // Replace with actual portrait
+            src="/vishal.webp" // Replace with actual portrait
             alt="Vishal Patil"
             className="w-full h-auto rounded-xl shadow-xl object-cover"
           />

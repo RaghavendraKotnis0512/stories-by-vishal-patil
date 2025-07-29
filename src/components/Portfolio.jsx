@@ -3,32 +3,32 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const portfolioItems = [
-  { title: "Rustic Arch Couple Portrait", category: "Wedding", img: "/portfolio1.png" ,loading: "lazy"},
-  { title: "Traditional Maharashtrian Wedding", category: "Wedding", img: "/portfolio2.png",loading: "lazy" },
-  { title: "Couple Walk in Nature", category: "Pre-Wedding", img: "/portfolio3.png",loading: "lazy" },
-  { title: "Reception Ring Ceremony", category: "Reception", img: "/featured1.jpg",loading: "lazy" },
-  { title: "Close-up Wedding Hug", category: "Wedding", img: "/featured2.jpg",loading: "lazy" },
-  { title: "Love Reflected by the Water", category: "Pre-Wedding", img: "/featured3.jpg",loading: "lazy" },
-  { title: "Colorful Mehendi Moment", category: "Mehendi", img: "/portfolio4.png",loading: "lazy" },
-  { title: "Black & White Couple Portrait", category: "Pre-Wedding", img: "/portfolio5.png",loading: "lazy" },
-  { title: "Traditional Ceremony Smiles", category: "Candid", img: "/portfolio6.jpg",loading: "lazy" },
-  { title: "Couple Portraits by the Sunset", category: "Casual-Photoshoot", img: "/portfolio7.jpg",loading: "lazy" },
-  { title: "Traditional Ceremony Smiles", category: "Wedding", img: "/portfolio8.jpg",loading: "lazy" },
-  { title: "Classic Black & White Portrait", category: "Tradition", img: "/portfolio9.jpg",loading: "lazy" },
-  { title: "Couple Shoot in Garden", category: "Wedding", img: "/portfolio10.jpg",loading: "lazy" },
-  { title: "Bridal Portrait with Greenery", category: "Bridal", img: "/portfolio11.jpg",loading: "lazy" },
-  { title: "Moments in a Garden of Dreams", category: "Bridal", img: "/portfolio12.JPG",loading: "lazy" },
+  { title: "Rustic Arch Couple Portrait", category: "Wedding", img: "/portfolio1.webp" ,loading: "lazy"},
+  { title: "Traditional Maharashtrian Wedding", category: "Wedding", img: "/portfolio2.webp",loading: "lazy" },
+  { title: "Couple Walk in Nature", category: "Pre-Wedding", img: "/portfolio3.webp",loading: "lazy" },
+  { title: "Reception Ring Ceremony", category: "Reception", img: "/featured1.webp",loading: "lazy" },
+  { title: "Close-up Wedding Hug", category: "Wedding", img: "/featured2.webp",loading: "lazy" },
+  { title: "Love Reflected by the Water", category: "Pre-Wedding", img: "/featured3.webp",loading: "lazy" },
+  { title: "Colorful Mehendi Moment", category: "Mehendi", img: "/portfolio4.webp",loading: "lazy" },
+  { title: "Black & White Couple Portrait", category: "Pre-Wedding", img: "/portfolio5.webp",loading: "lazy" },
+  { title: "Traditional Ceremony Smiles", category: "Candid", img: "/portfolio6.webp",loading: "lazy" },
+  { title: "Couple Portraits by the Sunset", category: "Casual-Photoshoot", img: "/portfolio7.webp",loading: "lazy" },
+  { title: "Traditional Ceremony Smiles", category: "Wedding", img: "/portfolio8.webp",loading: "lazy" },
+  { title: "Classic Black & White Portrait", category: "Tradition", img: "/portfolio9.webp",loading: "lazy" },
+  { title: "Couple Shoot in Garden", category: "Wedding", img: "/portfolio10.webp",loading: "lazy" },
+  { title: "Bridal Portrait with Greenery", category: "Bridal", img: "/portfolio11.webp",loading: "lazy" },
+  { title: "Moments in a Garden of Dreams", category: "Bridal", img: "/portfolio12.webp",loading: "lazy" },
 
-  { title: "Venue Entrance with Elegance", category: "Property", img: "/portfolio13.JPG", loading: "lazy" },
+  { title: "Venue Entrance with Elegance", category: "Property", img: "/portfolio13.webp", loading: "lazy" },
 
-  { title: "Modern Lobby with Wooden Finish", category: "Property", img: "/portfolio14.JPG", loading: "lazy" },
-  { title: "Twilight View of Hotel Exterior", category: "Property", img: "/portfolio15.JPG", loading: "lazy" },
+  { title: "Modern Lobby with Wooden Finish", category: "Property", img: "/portfolio14.webp", loading: "lazy" },
+  { title: "Twilight View of Hotel Exterior", category: "Property", img: "/portfolio15.webp", loading: "lazy" },
 
-  { title: "Hotel Corridor with Ambient Light", category: "Property", img: "/portfolio16.JPG", loading: "lazy" },
-  { title: "Cozy Deluxe Room Interior", category: "Property", img: "/portfolio17.JPG", loading: "lazy" },
+  { title: "Hotel Corridor with Ambient Light", category: "Property", img: "/portfolio16.webp", loading: "lazy" },
+  { title: "Cozy Deluxe Room Interior", category: "Property", img: "/portfolio17.webp", loading: "lazy" },
 
-  { title: "Plated Tandoori Appetizer", category: "Food", img: "/portfolio18.JPG", loading: "lazy" },
-  { title: "Royal Dum Biryani Platter", category: "Food", img: "/portfolio19.JPG", loading: "lazy" },
+  { title: "Plated Tandoori Appetizer", category: "Food", img: "/portfolio18.webp", loading: "lazy" },
+  { title: "Royal Dum Biryani Platter", category: "Food", img: "/portfolio19.webp", loading: "lazy" },
  
 ];
 
