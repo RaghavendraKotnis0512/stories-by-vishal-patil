@@ -31,6 +31,8 @@ const portfolioItems = [
 
   { title: "Plated Tandoori Appetizer", category: "Food", img: "/portfolio18.webp", loading: "lazy" },
   { title: "Royal Dum Biryani Platter", category: "Food", img: "/portfolio19.webp", loading: "lazy" },
+  { title: "Baby is a Basket", category: "Babies", img: "/portfolio20.webp", loading: "lazy" },
+  { title: "Couple Candids", category: "Couple", img: "/portfolio21.webp", loading: "lazy" },
  
 ];
 
@@ -47,7 +49,9 @@ const Portfolio = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-center text-4xl md:text-5xl font-serif tracking-wide mb-16 text-gray-800">
           <span className="block">A Glimpse Into</span>
-          <span className="font-semibold text-black">Our Portfolio</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-purple-500 to-indigo-600 font-extrabold">
+            Our Portfolio
+          </span>
         </h2>
 
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">

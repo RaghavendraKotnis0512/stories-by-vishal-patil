@@ -9,6 +9,7 @@ import Destination from "./components/Destination";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 function App() {
   const location = useLocation();
   const hideNavbarOn = ["/"]; // hide on Landing Page
@@ -23,6 +24,7 @@ function App() {
         {/* <Route path="/destination" element={<Destination />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>
     </>

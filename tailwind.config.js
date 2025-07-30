@@ -7,6 +7,13 @@ export default {
   fontFamily: {
     serif: ['Playfair Display', 'serif'],
     sans: ['Inter', 'sans-serif'],
+    
+  },
+  fontFamily: {
+        slab: ['Roboto Slab', 'serif'],
+      },
+      colors: {
+    gold: '#D4AF37',
   },
 
 
