@@ -1,6 +1,8 @@
 // Portfolio.jsx
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 const portfolioItems = [
   { title: "Rustic Arch Couple Portrait", category: "Wedding", img: "/portfolio1.webp" ,loading: "lazy"},
@@ -41,27 +43,40 @@ const Portfolio = () => {
   },[pathname]);
 
   return (
-    <section className="px-6 py-20 bg-white text-gray-800 mt-10">
-      <h2 className="text-center text-4xl font-light tracking-widest mb-12">
-        OUR <span className="font-semibold">PORTFOLIO</span>
-      </h2>
+    <section className="bg-[#f9f9f9] px-4 md:px-12 py-24 mt-10">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-center text-4xl md:text-5xl font-serif tracking-wide mb-16 text-gray-800">
+          <span className="block">A Glimpse Into</span>
+          <span className="font-semibold text-black">Our Portfolio</span>
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-        {portfolioItems.map((item, idx) => (
-          <div key={idx} className="relative group overflow-hidden rounded-lg shadow-md">
-            <img
-              src={item.img}
-              alt={item.title}
-              className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-              <div className="text-white">
-                <h3 className="text-lg font-semibold">{item.title}</h3>
-                <p className="text-sm text-gray-300">{item.category}</p>
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+          {portfolioItems.map((item, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              viewport={{ once: true }}
+              className="relative w-full break-inside-avoid overflow-hidden rounded-xl shadow-sm group transition duration-500 hover:shadow-2xl"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                loading={item.loading}
+                className="w-full h-auto object-cover rounded-xl transform group-hover:scale-105 transition duration-700 ease-in-out"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-4 rounded-xl backdrop-blur-sm">
+                <div className="text-white">
+                  <h3 className="text-lg md:text-xl font-medium">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-300">{item.category}</p>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
