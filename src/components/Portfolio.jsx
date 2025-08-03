@@ -31,7 +31,7 @@ const portfolioItems = [
 
   { title: "Plated Tandoori Appetizer", category: "Food", img: "/portfolio18.webp", loading: "lazy" },
   { title: "Royal Dum Biryani Platter", category: "Food", img: "/portfolio19.webp", loading: "lazy" },
-  { title: "Baby is a Basket", category: "Babies", img: "/portfolio20.webp", loading: "lazy" },
+  { title: "Baby in a Basket", category: "Babies", img: "/portfolio20.webp", loading: "lazy" },
   { title: "Couple Candids", category: "Couple", img: "/portfolio21.webp", loading: "lazy" },
 
   { title: "Moments Before Motherhood", category: "Family", img: "/portfolio23.webp", loading: "lazy" },
