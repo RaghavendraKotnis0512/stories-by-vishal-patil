@@ -34,15 +34,15 @@ const portfolioItems = [
   { title: "Baby is a Basket", category: "Babies", img: "/portfolio20.webp", loading: "lazy" },
   { title: "Couple Candids", category: "Couple", img: "/portfolio21.webp", loading: "lazy" },
 
-  { title: "Twilight View of Hotel Exterior", category: "Property", img: "/portfolio23.webp", loading: "lazy" },
+  { title: "Moments Before Motherhood", category: "Family", img: "/portfolio23.webp", loading: "lazy" },
 
-  { title: "Hotel Corridor with Ambient Light", category: "Property", img: "/portfolio24.webp", loading: "lazy" },
-  { title: "Cozy Deluxe Room Interior", category: "Property", img: "/portfolio25.webp", loading: "lazy" },
+  { title: "Candids", category: "Candid", img: "/portfolio24.webp", loading: "lazy" },
+  { title: "Family Picture", category: "Family", img: "/portfolio25.webp", loading: "lazy" },
 
-  { title: "Plated Tandoori Appetizer", category: "Food", img: "/portfolio26.webp", loading: "lazy" },
-  { title: "Royal Dum Biryani Platter", category: "Food", img: "/portfolio27.webp", loading: "lazy" },
-  { title: "Baby is a Basket", category: "Babies", img: "/portfolio28.webp", loading: "lazy" },
-  { title: "Couple Candids", category: "Couple", img: "/portfolio29.webp", loading: "lazy" },
+  { title: "Wedding Candids", category: "Wedding", img: "/portfolio26.webp", loading: "lazy" },
+  { title: "Couple Potrait Photoshoot", category: "Couple", img: "/portfolio27.webp", loading: "lazy" },
+  { title: "Bridal Photoshoot in the Garden", category: "Bridal", img: "/portfolio28.webp", loading: "lazy" },
+  { title: "Reception Ceremony", category: "Reception", img: "/portfolio29.webp", loading: "lazy" },
  
 ];
 
