@@ -12,21 +12,21 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 function App() {
   const location = useLocation();
-  const hideNavbarOn = ["/"]; // hide on Landing Page
+  const hideOnLanding = ["/"]; // paths where you want to hide components
 
   return (
     <>
-      {!hideNavbarOn.includes(location.pathname) && <Navbar />}
+      {!hideOnLanding.includes(location.pathname) && <Navbar />}
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
-        {/* <Route path="/destination" element={<Destination />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer/>
+
+      {!hideOnLanding.includes(location.pathname) && <Footer />}
     </>
   );
 }
