@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FaQuoteLeft } from "react-icons/fa";
 
-const images = ["/swiper1.webp", "/swiper2.webp", "/swiper3.webp", "/swiper4.webp", "/swiper5.webp", "/swiper6.webp", "/swiper7.webp", "/portfolio12.webp"];
+const images = ["/swiper1.webp", "/portfolio6.webp", "/swiper3.webp", "/swiper4.webp", "/swiper5.webp", "/swiper6.webp", "/swiper7.webp", "/portfolio12.webp"];
 const featuredImages = ["/portfolio1.webp", "/portfolio2.webp", "/portfolio3.webp", "/featured1.webp", "/featured2.webp", "/featured3.webp"];
 const testimonials = [
   {
@@ -60,7 +60,7 @@ const Home = () => {
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
-    className="text-4xl md:text-6xl font-serif text-[#f5d77c] drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] tracking-wide"
+    className="text-4xl md:text-6xl font-serif text-[#f5f5dc] drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] tracking-wide"
   >
     Moments that Breathe,<br />Memories that Live Forever.
   </motion.h2>
@@ -78,8 +78,7 @@ const Home = () => {
 
     {/* Swiper with 2–3 Slides at once */}
     <Swiper
-      modules={[Navigation, Autoplay]}
-      navigation
+      modules={[Autoplay]}
       loop
       autoplay={{ delay: 3500, disableOnInteraction: false }}
       breakpoints={{
@@ -139,7 +138,7 @@ const Home = () => {
     transition={{ delay: 0.2, duration: 1 }}
     className="max-w-4xl mx-auto text-gray-700"
   >
-    <h3 className="font-serif text-7xl sm:text-5xl font-bold mb-6 text-yellow-500">
+    <h3 className="font-serif text-7xl sm:text-5xl font-bold mb-6 text-yellow-600">
       Stories by Vishal Patil
     </h3>
     <p className="text-lg sm:text-xl leading-relaxed font-light">
@@ -184,7 +183,7 @@ const Home = () => {
       Your Story, Our Lens
     </p>
     <h2 className="text-2xl lg:text-5xl font-serif text-[#FFD700] drop-shadow-[0_2px_10px_rgba(255,215,0,0.5)] mb-6 leading-tight">
-      MEMORIES ETHCHED IN EVERY FRAME
+      MEMORIES ETCHED IN EVERY FRAME
     </h2>
     <p className="text-lg text-gray-200 font-light leading-relaxed max-w-2xl">
       From the vibrant deserts of Rajasthan to the calm shores of Kerala, we don’t just capture photos —
@@ -202,28 +201,23 @@ const Home = () => {
 {/*video*/}
 
 <section
-  className="w-full px-4 mt-20 flex justify-center items-center"
   id="reel"
+  className="w-full min-h-screen relative overflow-hidden bg-black mt-24"
 >
-  <div className="bg-[#111827cc] backdrop-blur-md rounded-3xl w-[90%] text-center px-6 py-12">
-    <h2 className="text-yellow-500 text-4xl font-serif mb-4">
-      OUR STORYTELLING IN MOTION
-    </h2>
-    <p className="text-gray-200 mb-6 text-lg">
-      Witness the magic through moving frames — here's a glimpse into weddings we've had the honor to capture.
-    </p>
-    <div className="w-full h-96 rounded-xl overflow-hidden shadow-2xl mx-auto">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        title="Wedding Reel"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    </div>
-  </div>
+  <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#111827] to-transparent z-10" />
+  
+  <video
+    className="absolute top-1/2 left-1/2 w-auto h-[120vh] max-w-none transform -translate-x-1/2 -translate-y-1/2 rotate-270 scale-[2.25] object-cover object-left"
+    autoPlay
+    muted
+    loop
+    playsInline
+  >
+    <source src="/video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 </section>
+
 
 
 
@@ -322,7 +316,7 @@ const Home = () => {
               “{testimonial.text}”
             </p>
           </div>
-          <p className="text-gray-900 font-semibold text-lg">{testimonial.name}</p>
+          <p className="text-gray-900 font-semibold text-lg">-{testimonial.name}</p>
         </div>
       </SwiperSlide>
     ))}

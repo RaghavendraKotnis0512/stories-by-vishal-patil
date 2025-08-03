@@ -7,12 +7,12 @@ import {
   Contact,
   Menu,
   X,
-  Mail,
-  Sun,
-  Moon,
   Github,
   Linkedin,
   Twitter,
+  Instagram,
+  Youtube,
+  Facebook,
 } from "lucide-react";
 
 const Navbar = () => {
@@ -20,7 +20,6 @@ const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
   const location = useLocation();
 
-  // Hide navbar on landing page
   if (location.pathname === "/") return null;
 
   useEffect(() => {
@@ -35,9 +34,10 @@ const Navbar = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github />, url: "https://github.com" },
-    { icon: <Linkedin />, url: "https://linkedin.com" },
-    { icon: <Twitter />, url: "https://twitter.com" },
+    { icon: <Instagram />, url: "https://www.instagram.com/stories_by_vishalpatil/" },
+    { icon: <Youtube />, url: "https://www.youtube.com/@storiesbyvishalpatil9707/videos" },
+    { icon: <Facebook />, url: "https://www.facebook.com/share/12HYiiL34JF/?mibextid=wwXlfr" },
+    { icon: <Linkedin />, url: "https://www.linkedin.com/in/vishal-patil-9aa6ab304/" },
   ];
 
   return (
@@ -45,7 +45,17 @@ const Navbar = () => {
       {/* Top Navbar */}
       <nav className="w-full px-6 py-4 fixed top-0 left-0 z-50 shadow-md bg-white/60 dark:bg-black/30 backdrop-blur-md border-b border-gray-300 dark:border-gray-700 font-roboto">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
-          <div className="flex items-center gap-4">
+          {/* Hamburger (left) */}
+          <button
+            className="md:hidden text-gray-700 dark:text-white"
+            onClick={() => setOpen(true)}
+            aria-label="Open menu"
+          >
+            <Menu size={24} />
+          </button>
+
+          {/* Logo (center) */}
+          <div className="flex-1 flex ">
             <img
               src="vplogo.webp"
               alt="VP Logo"
@@ -53,13 +63,13 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Desktop Nav Links */}
+          {/* Nav Links (right - desktop only) */}
           <div className="hidden md:flex gap-10 text-lg font-semibold">
             {navLinks.map(({ to, label }) => (
               <Link
                 key={to}
                 to={to}
-                className={`hover:text-[#f5d77c] transition-all duration-300 text-sm uppercase tracking-[0.35em] font-semibold text-gray-500 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text mb-6 ${
+                className={`hover:text-[#f5d77c] transition-all duration-300 text-sm uppercase tracking-[0.35em] font-semibold text-gray-500 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text ${
                   location.pathname === to
                     ? "text-blue-700 underline underline-offset-8"
                     : "text-gray-700 dark:text-gray-100"
@@ -69,21 +79,10 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-
-          
-
-          {/* Mobile Hamburger */}
-          <button
-            className="ml-0 md:hidden dark:text-white text-sm uppercase tracking-[0.35em] font-semibold text-gray-500 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text mb-6"
-            onClick={() => setOpen(true)}
-            aria-label="Open menu"
-          >
-            <Menu size={24} />
-          </button>
         </div>
       </nav>
 
-      {/* Glassmorphism Sidebar */}
+      {/* Sidebar (mobile) */}
       <div
         className={`fixed top-0 left-0 h-full w-64 z-50 backdrop-blur-lg bg-white/20 dark:bg-black/30 text-black dark:text-white border-r border-gray-300 dark:border-gray-700 transform transition-transform duration-300 ${
           open ? "translate-x-0" : "-translate-x-full"
@@ -102,7 +101,7 @@ const Navbar = () => {
               key={to}
               to={to}
               onClick={() => setOpen(false)}
-              className={`flex items-center gap-3 transition duration-300 hover:text-blue-500 ${
+              className={`flex items-center gap-3 transition duration-300 hover:text-[#f5d77c] ${
                 location.pathname === to ? "text-blue-600 font-semibold" : ""
               }`}
             >
