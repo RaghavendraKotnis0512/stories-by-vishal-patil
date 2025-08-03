@@ -13,29 +13,30 @@ const featuredImages = ["/portfolio1.webp", "/portfolio2.webp", "/portfolio3.web
 const testimonials = [
   {
     name: "Aarav & Meera",
-    text: "Captured every emotion so beautifully—our memories are now timeless!",
+    text: "Our maternity photoshoot was captured with so much grace and emotion. We’ll cherish it forever!",
   },
   {
     name: "Siddharth & Riya",
-    text: "Made us feel at ease and delivered stunning photographs.",
+    text: "Our wedding was magical, and the photos brought every moment to life beautifully.",
   },
   {
     name: "Ishaan & Tanvi",
-    text: "Turned our big day into pure art. Best choice ever!",
+    text: "From candid moments to reception highlights, every picture is a masterpiece.",
   },
   {
     name: "Neha & Arjun",
-    text: "Every photo tells a story. Truly magical experience.",
+    text: "The baby photoshoot melted our hearts—so natural and full of love.",
   },
   {
     name: "Karan & Ananya",
-    text: "Professional, friendly, and incredibly talented!",
+    text: "The reception photos perfectly captured the celebration and joy of the evening.",
   },
   {
     name: "Divya & Rohan",
-    text: "Exceeded every expectation. Grateful beyond words!",
+    text: "Whether it was our pre-wedding, maternity, or baby shoot, every experience was flawless!",
   },
 ];
+
 
 const Home = () => {
   const navigate = useNavigate();
