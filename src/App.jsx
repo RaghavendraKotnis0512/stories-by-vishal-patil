@@ -10,6 +10,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import OurTeam from "./components/Team";
 function App() {
   const location = useLocation();
   const hideOnLanding = ["/"]; // paths where you want to hide components
@@ -23,6 +24,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/ourteam" element={<OurTeam />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 

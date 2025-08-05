@@ -63,7 +63,7 @@ const Home = () => {
     transition={{ duration: 1 }}
     className="text-4xl md:text-6xl font-serif text-[#f5f5dc] drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] tracking-wide"
   >
-    Moments that Breathe,<br />Memories that Live Forever.
+    Moments. Memories. Forever.
   </motion.h2>
   
   <motion.p
@@ -139,9 +139,8 @@ const Home = () => {
     transition={{ delay: 0.2, duration: 1 }}
     className="max-w-4xl mx-auto text-gray-700"
   >
-    <h3 className="font-serif text-7xl sm:text-5xl font-bold mb-6 text-yellow-600">
-      Stories by Vishal Patil
-    </h3>
+    <img src="vplogo.webp" className="mx-auto w-90 h-35" />
+
     <p className="text-lg sm:text-xl leading-relaxed font-light">
       We believe the most magical moments are often unplanned—a soft glance, a shared smile, a silent vow. 
       Our lens doesn’t just capture what you see, it preserves how you *felt*.
@@ -157,14 +156,15 @@ const Home = () => {
 
   {/* Poetic quote */}
   <motion.blockquote
-    initial={{ opacity: 0, scale: 0.95 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    viewport={{ once: true }}
-    transition={{ delay: 0.4, duration: 1 }}
-    className="italic text-xl sm:text-2xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-400 bg-clip-text text-transparent drop-shadow-md mb-6 leading-tight"
-  >
-    “HONEST. EMOTIONAL. UNFORGETTABLE. LET’S TURN YOUR MOMENTS INTO MEMORIES THAT LAST A LIFETIME.”
-  </motion.blockquote>
+  initial={{ opacity: 0, scale: 0.95 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  viewport={{ once: true }}
+  transition={{ delay: 0.4, duration: 1 }}
+  className="italic text-xl sm:text-2xl text-gray-700 drop-shadow-md mb-6 leading-tight"
+>
+  “HONEST. EMOTIONAL. UNFORGETTABLE. LET’S TURN YOUR MOMENTS INTO MEMORIES THAT LAST A LIFETIME.”
+</motion.blockquote>
+
 </section>
 
 
@@ -172,9 +172,9 @@ const Home = () => {
    <section
   className="relative isolate overflow-hidden bg-gray-900 px-6 py-32 sm:px-10 lg:px-24 text-white"
   style={{
-    backgroundImage: "url('/world.webp')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundImage: "url('/world-2.webp')",
+    backgroundSize: "100%",
+    backgroundPosition: "center 80%",
   }}
 >
   <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
@@ -195,6 +195,7 @@ const Home = () => {
     </p>
   </div>
 </section>
+
 
 
 
@@ -269,15 +270,16 @@ const Home = () => {
 
       {/* Button */}
       <div className="flex justify-center mt-16">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.96 }}
-          onClick={() => navigate("/portfolio")}
-          className="bg-gradient-to-r from-purple-600 via-rose-500 to-indigo-500 text-white px-10 py-3 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
-          style={{ fontFamily: "'Roboto Slab', serif" }}
-        >
-          View Full Portfolio →
-        </motion.button>
+      <motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.96 }}
+  onClick={() => navigate("/portfolio")}
+  className="bg-slate-500 text-white px-10 py-3 rounded-full text-lg font-semibold shadow-xl hover:bg-slate-700 transition-all duration-300"
+  style={{ fontFamily: "'Roboto Slab', serif" }}
+>
+  View Full Portfolio →
+</motion.button>
+
       </div>
     </section>
 

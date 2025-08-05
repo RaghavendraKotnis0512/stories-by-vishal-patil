@@ -57,11 +57,9 @@ const Portfolio = () => {
   return (
     <section className="bg-[#f9f9f9] px-4 md:px-12 py-24 mt-10">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-4xl md:text-5xl font-serif tracking-wide mb-16 text-gray-800">
+        <h2 className="text-center text-4xl md:text-5xl font-serif tracking-wide mb-16 text-gray-500">
           <span className="block">A Glimpse Into</span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-purple-500 to-indigo-600 font-extrabold">
-            Our Portfolio
-          </span>
+          Our Portfolio
         </h2>
 
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">

@@ -18,7 +18,7 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl md:text-5xl font-serif tracking-wide mb-4 text-gray-900">
+        <h1 className="text-4xl md:text-5xl font-serif tracking-wide mb-4 text-gray-500">
           Meet Vishal Patil
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto font-light text-gray-600">

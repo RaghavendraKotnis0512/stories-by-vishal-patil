@@ -30,6 +30,7 @@ const Navbar = () => {
     { to: "/home", icon: <Home size={20} />, label: "Home" },
     { to: "/about", icon: <Info size={20} />, label: "About" },
     { to: "/portfolio", icon: <Image size={20} />, label: "Portfolio" },
+    { to: "/ourteam", icon: <Image size={20} />, label: "Our Team" },
     { to: "/footer", icon: <Contact size={20} />, label: "Contact" },
   ];
 
