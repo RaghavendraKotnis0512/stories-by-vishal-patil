@@ -13,7 +13,6 @@ const portfolioItems = [
   { title: "Love Reflected by the Water", category: "Pre-Wedding", img: "/featured3.webp",loading: "lazy" },
   { title: "Colorful Mehendi Moment", category: "Mehendi", img: "/portfolio4.webp",loading: "lazy" },
   { title: "Black & White Couple Portrait", category: "Pre-Wedding", img: "/portfolio5.webp",loading: "lazy" },
-  { title: "Traditional Ceremony Smiles", category: "Candid", img: "/portfolio6.webp",loading: "lazy" },
   { title: "Couple Portraits by the Sunset", category: "Casual-Photoshoot", img: "/portfolio7.webp",loading: "lazy" },
   { title: "Traditional Ceremony Smiles", category: "Wedding", img: "/portfolio8.webp",loading: "lazy" },
   { title: "Classic Black & White Portrait", category: "Tradition", img: "/portfolio9.webp",loading: "lazy" },
