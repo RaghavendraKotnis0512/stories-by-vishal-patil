@@ -71,6 +71,7 @@ const TeamCard = ({ member }) => (
       <img
         src={member.image}
         alt={member.name}
+        loading="lazy"
         className="rounded-full w-24 h-24 object-cover"
       />
     </div>

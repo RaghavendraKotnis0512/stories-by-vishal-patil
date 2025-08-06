@@ -94,6 +94,7 @@ const Home = () => {
           <img
             src={src}
             alt={`slide-${idx}`}
+            loading="lazy"
             className="w-full h-full object-cover transition-transform duration-700 ease-in-out hover:scale-105 rounded-xl"
           />
         </SwiperSlide>
@@ -212,6 +213,7 @@ const Home = () => {
     className="absolute top-1/2 left-1/2 w-auto h-[120vh] max-w-none transform -translate-x-1/2 -translate-y-1/2 rotate-270 scale-[2.25] object-cover object-left"
     autoPlay
     muted
+    loading="lazy"
     loop
     playsInline
   >
